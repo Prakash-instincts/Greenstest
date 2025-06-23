@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and decrement</title>
+</head>
+<body>
+    <h1>Increment and Decrement</h1>
+
+    <button onclick="increase()">+</button>
+    <button onclick="decrease()">-</button>
+    <p id="result">0</p>
+
+    <script>
+        let result= 0;
+        function increase(){
+            result++;
+            document.getElementById("result").innerHTML=result;
+        }
+
+        function decrease(){
+            result--;
+            document.getElementById("result").innerHTML=result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+</head>
+<body>
+
+    <h1>Adding two numbers</h1>
+    <input type="number" id="number1" placeholder="Enter the 1st number">
+    <input type="number" id="number2" placeholder="Enter the 2nd number">
+    <button onclick="addingnum()">Add</button>
+    <p id="answer">Result reflects here...</p>
+
+    <script>
+        function addingnum(){
+            const number1 = document.getElementById("number1").value;
+            const number2 = document.getElementById("number2").value;
+
+            const sum = parseInt(number1) + parseInt(number2);
+
+            document.getElementById("answer").innerHTML = "Result is" + sum;
+        }
+    </script>
+    
+</body>
+</html>
